@@ -30,21 +30,21 @@ class EntryFormState extends State<EntryForm> {
     //rubah
     return Scaffold(
         appBar: AppBar(
-          title: contact == null ? Text('TAMBAH') : Text('Edit'),
+          title: contact == null ? Text('CREATE') : Text('EDIT'),
           leading: Icon(Icons.keyboard_arrow_left),
         ),
         body: Padding(
-          padding: EdgeInsets.only(top: 30.0, left:10.0, right:10.0),
+          padding: EdgeInsets.only(top: 20.0, left:10.0, right:10.0),
           child: ListView(
             children: <Widget> [
               // nama
               Padding (
-                padding: EdgeInsets.only(top:30.0, bottom:30.0),
+                padding: EdgeInsets.only(top:20.0, bottom:20.0),
                 child: TextField(
                   controller: nameController,
                   keyboardType: TextInputType.text,
                   decoration: InputDecoration(
-                    labelText: 'Nama Lengkap',
+                    labelText: 'NAMA LENGKAP',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5.0),
                     ),
@@ -57,12 +57,12 @@ class EntryFormState extends State<EntryForm> {
 
               // telepon
               Padding (
-                padding: EdgeInsets.only(top:30.0, bottom:30.0),
+                padding: EdgeInsets.only(top:20.0, bottom:20.0),
                 child: TextField(
                   controller: phoneController,
                   keyboardType: TextInputType.phone,
                   decoration: InputDecoration(
-                    labelText: 'Telepon',
+                    labelText: 'TELEPON',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5.0),
                     ),
@@ -79,7 +79,7 @@ class EntryFormState extends State<EntryForm> {
                   controller: gajiController,
                   keyboardType: TextInputType.phone,
                   decoration: InputDecoration(
-                    labelText: 'Gaji',
+                    labelText: 'GAJI',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5.0),
                     ),
@@ -98,10 +98,10 @@ class EntryFormState extends State<EntryForm> {
                     // tombol simpan
                     Expanded(
                       child: RaisedButton(
-                        color: Colors.blueAccent,
+                        color: Colors.green,
                         textColor: Colors.white,
                         child: Text(
-                          'SIMPAN',
+                          'SAVE',
                           textScaleFactor: 1.5,
                         ),
                         onPressed: () {
@@ -123,10 +123,10 @@ class EntryFormState extends State<EntryForm> {
                     // tombol batal
                     Expanded(
                       child: RaisedButton(
-                        color: Colors.redAccent,
+                        color: Colors.red,
                         textColor: Colors.white,
                         child: Text(
-                          'BATAL',
+                          'CANCEL',
                           textScaleFactor: 1.5,
                         ),
                         onPressed: () {

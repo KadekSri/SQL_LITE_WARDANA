@@ -27,7 +27,7 @@ class HomeState extends State<Home> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Yuana Silver Salary'),
+        title: Text('Project Sql Lite Wardana'),
       ),
       body: createListView(),
       floatingActionButton: FloatingActionButton(
@@ -59,11 +59,11 @@ class HomeState extends State<Home> {
       itemCount: count,
       itemBuilder: (BuildContext context, int index) {
         return Card(
-          color: Colors.white,
+          color: Colors.lightBlueAccent,
           elevation: 2.0,
           child: ListTile(
             leading: CircleAvatar(
-              backgroundColor: Colors.brown,
+              backgroundColor: Colors.purpleAccent,
               child: Icon(Icons.people),
             ),
             title: Text(this.contactList[index].name, style: textStyle,),

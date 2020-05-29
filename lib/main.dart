@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       //judul
       title: 'Tambahkan Daftar',
       theme: ThemeData(
-        primarySwatch: Colors.brown,
+        primarySwatch: Colors.purple,
       ),
       home: Home(),
     );
